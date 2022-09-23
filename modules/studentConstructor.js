@@ -18,12 +18,10 @@ class student {
   }
 
   average() {
-    let rating = this._rating
+    const rating = this._rating
 
     const total = rating.reduce((previousValue, currentValue) => previousValue + currentValue,
     0)
-
-    
 
     return total / rating.length
   }

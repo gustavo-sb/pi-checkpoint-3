@@ -1,7 +1,7 @@
 const student = require('./modules/studentConstructor')
 const studentsList = require('./modules/students')
 
-let reactjsClass = {
+const reactjsClass = {
   name: 'React JS',
   passingGrade: 6,
   maxAbsence: 10,
@@ -27,8 +27,8 @@ let reactjsClass = {
 
   allApproved(students) {
     students.map((student) => {
-      let name = student.name
-      let aprroved = this.approved(student)
+      const name = student.name
+      const aprroved = this.approved(student)
       return console.log({
         name,
         aprroved
